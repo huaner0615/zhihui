@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.zhihui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <FrameLayout
+        android:layout_width="match_parent"
+    	android:layout_height="180dp"
+         >
+    <com.example.zhihui.view.HorizontalScrollViewPager
+        android:id="@+id/vp_tab_detail"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="bottom"
+    	android:background="#a000"
+    	android:padding="5dp"
+    	
+        >
+        <TextView 
+            android:id="@+id/tv_title"
+            android:text="标题"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            />
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:fillColor="#f00"
+            app:pageColor="#9e9e9e"
+            app:radius="5dp"
+            android:padding="10dp"
+            app:strokeWidth="0dp"
+            />
+    </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
